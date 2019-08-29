@@ -1,0 +1,29 @@
+<form action="/patient/{{patient.pk}}/bed-assign" method="post">
+    {% csrf_token %}
+    <div>
+        <label for="your_name">Blood Pressure: </label>
+        <input id="your_name" type="text" name="your_name" value="{{ current_name }}">
+    </div>
+    <div>
+        <label for="your_name">Pulse Rate: </label>
+        <input id="your_name" type="text" name="your_name" value="{{ current_name }}">
+    </div>
+    <div>
+        <label for="your_name">Temperature: </label>
+        <input id="your_name" type="text" name="your_name" value="{{ current_name }}">
+    </div>
+    <div>
+        <label for="your_name">Respiratory Rate: </label>
+        <input id="your_name" type="text" name="your_name" value="{{ current_name }}">
+    </div>
+    <div>
+        <label for="your_name">Oxygen Saturation: </label>
+        <input id="your_name" type="text" name="your_name" value="{{ current_name }}">
+    </div>
+    <div>
+        <label for="your_name">Patient Name: </label>
+        <input id="your_name" type="text" name="your_name" value="{{ patient.name }}">
+    </div>
+    {{ patient.name }}Here is the object
+    <input type="submit" value="OK">
+</form>

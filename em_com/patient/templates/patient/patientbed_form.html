@@ -1,0 +1,13 @@
+<form action="{{ patient.url }}" method="post">
+    {% csrf_token %}
+    <div>
+        <label for="your_name">Patient ID: </label>
+        <input id="your_name" type="text" name="your_name" value="{{ patient.pk }}">
+    </div>
+    <div>
+        <label for="your_name">Bed Number: </label>
+        <input id="your_name" type="text" name="your_name" value="{{ current_name }}">
+    </div>
+    
+    <input type="submit" value="OK">
+</form>
